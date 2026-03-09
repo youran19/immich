@@ -20,7 +20,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: file: server/Dockerfile
+          file: server/Dockerfile
           platforms: linux/arm/v7
           outputs: type=docker,dest=/tmp/immich-static-armv7.tar
           provenance: false
